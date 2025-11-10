@@ -1,0 +1,151 @@
+{
+  "name": "hyperliquid-mcp-server",
+  "description": "Complete MCP server for Hyperliquid DEX - trading, account management, market data, and WebSocket subscriptions",
+  "version": "1.0.0",
+  "author": "Caio Vicentino",
+  "license": "MIT",
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  },
+  "tools": [
+    {
+      "name": "hl_place_order",
+      "description": "Place a limit or market order on Hyperliquid"
+    },
+    {
+      "name": "hl_cancel_order",
+      "description": "Cancel a specific open order by order ID"
+    },
+    {
+      "name": "hl_cancel_all_orders",
+      "description": "Cancel all open orders for a specific coin or all coins"
+    },
+    {
+      "name": "hl_modify_order",
+      "description": "Modify an existing order's price and/or size"
+    },
+    {
+      "name": "hl_batch_orders",
+      "description": "Place multiple orders in a single transaction"
+    },
+    {
+      "name": "hl_close_position",
+      "description": "Close an open position (market order at current price)"
+    },
+    {
+      "name": "hl_set_leverage",
+      "description": "Set leverage for a specific trading pair"
+    },
+    {
+      "name": "hl_get_positions",
+      "description": "Get all current open positions with PnL information"
+    },
+    {
+      "name": "hl_get_open_orders",
+      "description": "Get all currently open orders"
+    },
+    {
+      "name": "hl_get_account_balance",
+      "description": "Get account balance and margin information"
+    },
+    {
+      "name": "hl_get_user_fills",
+      "description": "Get historical trade fills for the account"
+    },
+    {
+      "name": "hl_get_funding_history",
+      "description": "Get funding payment history for perpetual positions"
+    },
+    {
+      "name": "hl_get_user_funding_rate",
+      "description": "Get current funding rates for user's positions"
+    },
+    {
+      "name": "hl_get_margin_summary",
+      "description": "Get detailed margin and account value summary"
+    },
+    {
+      "name": "hl_update_isolated_margin",
+      "description": "Update isolated margin for a specific position"
+    },
+    {
+      "name": "hl_get_order_status",
+      "description": "Get detailed status of a specific order"
+    },
+    {
+      "name": "hl_get_market_prices",
+      "description": "Get current market prices for all or specific trading pairs"
+    },
+    {
+      "name": "hl_get_orderbook",
+      "description": "Get real-time order book for a trading pair"
+    },
+    {
+      "name": "hl_get_candles",
+      "description": "Get historical candlestick (OHLCV) data"
+    },
+    {
+      "name": "hl_get_recent_trades",
+      "description": "Get recent market trades for a trading pair"
+    },
+    {
+      "name": "hl_get_funding_rates",
+      "description": "Get current and predicted funding rates for all pairs"
+    },
+    {
+      "name": "hl_get_market_metadata",
+      "description": "Get market configuration and trading pair information"
+    },
+    {
+      "name": "hl_subscribe_orderbook",
+      "description": "Subscribe to real-time order book updates via WebSocket"
+    },
+    {
+      "name": "hl_subscribe_trades",
+      "description": "Subscribe to real-time trade updates via WebSocket"
+    },
+    {
+      "name": "hl_subscribe_user_events",
+      "description": "Subscribe to user-specific events (fills, order updates) via WebSocket"
+    },
+    {
+      "name": "hl_unsubscribe_all",
+      "description": "Unsubscribe from all active WebSocket subscriptions"
+    },
+    {
+      "name": "hl_get_24h_stats",
+      "description": "Get 24-hour trading statistics for markets"
+    },
+    {
+      "name": "hl_get_liquidations",
+      "description": "Get recent liquidation events"
+    }
+  ],
+  "requirements": {
+    "python": ">=3.8",
+    "dependencies": [
+      "mcp[cli]>=1.0.0",
+      "hyperliquid-python-sdk>=0.1.0",
+      "httpx>=0.24.0",
+      "websockets>=12.0",
+      "python-dotenv>=1.0.0",
+      "pydantic>=2.0.0"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hyperliquid-mcp-server"
+  },
+  "keywords": [
+    "mcp",
+    "hyperliquid",
+    "trading",
+    "cryptocurrency",
+    "defi",
+    "perpetual-futures",
+    "claude",
+    "ai-trading"
+  ]
+}

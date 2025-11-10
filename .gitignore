@@ -1,0 +1,72 @@
+# Environment variables (NEVER commit!)
+.env
+.env.local
+.env.production
+.env.backup
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv
+
+# Logs
+*.log
+nohup.out
+
+# Trading data (contains account info)
+account_state.json
+market_analysis.json
+risk_signals.json
+performance_report.json
+trades_log.json
+trade_*.json
+protections_configured.json
+stop_and_tp_config.json
+data/*.json
+
+# Generated reports and status files
+*_REPORT.md
+*_STATUS.md
+*_SUMMARY.md
+AGENT_*.md
+BOT_*.md
+TRADING_*.md
+FINAL_*.md
+FIX_*.md
+IMPLEMENTATION_*.md
+DEPLOYMENT_*.md
+ACCOUNT_MODULE_*.md
+MARKET_WEBSOCKET_*.md
+PROBLEMA_*.md
+EXAMPLE_COMMANDS.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary
+*.tmp
+*.temp
+.cache/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Local Claude config
+claude_desktop_config.json
+
+# Test files
+test_*.json
+test_*.py
