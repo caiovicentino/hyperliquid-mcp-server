@@ -810,7 +810,7 @@ Este projeto foi criado para democratizar o acesso a ferramentas profissionais d
 **Dedicado às comunidades:**
 - 🎯 **Yield Hacker** - Maximizando retornos DeFi
 - 💰 **Renda Cripto** - Educação financeira em cripto
-- 🏗️ **Cultura Builder** - Construindo o futuro descentralizado
+- 🏗️ **Cultura Builder** - Construindo o futuro com AI
 
 ---
 
